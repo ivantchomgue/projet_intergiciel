@@ -20,6 +20,12 @@ Documentation Rapide
 
 Elle résume tout ce qu'il y a à savoir sur le gestionnaire de version GIT.
 
+URL
+===
+https://github.com/ivantchomgue
+** Notez que cette URL est confidentielle car le projet étant public si vous partagez cette URL tout le monde
+pourra y accéder **
+
 Astuces
 =======
     * Faire un git pull avant de vous lancer dans le code. Ceci permettra de travailler sur un projet à jour
