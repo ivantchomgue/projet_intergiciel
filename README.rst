@@ -37,6 +37,5 @@ Astuces
     * Enfin de journée, ou quand vous avez terminer de travailler faire un git push pour envoyer les fichiers sur le serveur
 
 
-©copyright
+©copyleft
 ---------
-    Ivan Brunel TCHOMGUE 
