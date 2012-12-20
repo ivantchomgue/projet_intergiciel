@@ -36,6 +36,39 @@ Astuces
     * git diff permet de voir où les modifications ont été faites
     * Enfin de journée, ou quand vous avez terminer de travailler faire un git push pour envoyer les fichiers sur le serveur
 
+Fonctionnalités de l'application
+================================
+    * Inscription
+    * Connexion
+    * Changement de profil (mot de passe, e-mail...)
+    * Recherche :
+        * de résultats du classement
+        * de profils dans lesquels on pourra voter +1 ou -1
+    * Administration
 
-©copyleft
+Technologies utilisées
+======================
+    * Java EE avec Glassfish
+    * HTML5 / CSS3
+    * Javascript
+    * Ajax
+
+Tables de données
+=================
+    * meufs :
+        * Nombre de votes pour
+        * Nombre de votes contre
+        * Établissement
+        * Caractères physiques ?
+    * utilisateurs :
+        * Pseudo
+        * Mot de passe
+        * E-mail
+        * Favoris : liste de meufs
+        * Likes : liste des meufs pour lesquelles l'utilisateur a voté pour
+        * Dislikes : liste des meufs pour lesquelles l'utilisateur a voté contre
+        * Notes : liste de couples (meuf, note) ?
+    * etablissements ?
+
+(Ɔ)copyleft
 ---------
