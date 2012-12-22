@@ -1,0 +1,113 @@
+\documentclass[10pt, a4paper]{report}
+
+\usepackage{eurosym}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+%\usepackage{lmodern}
+\usepackage[autolanguage]{numprint}
+\usepackage{wrapfig}%insertion d'une image ds un texte
+\usepackage{float}%pour utiliser les options flottantes d'une image
+\usepackage{vmargin}   % pour modifier les marges valeurs ci-dessous
+    \setmarginsrb   %default values
+    {25mm}  % leftmargin : 30mm
+    {15mm}  % topmargin
+    {25mm}  % rightmargin
+    {30mm}  % bottommargin : 25mm
+    {12.1638pt}  % headheight
+    {5mm}   % headsep
+    {12pt}  % footheight
+    {10mm}  % footskip
+\usepackage{listings}
+\lstset{ %
+    language=Java,                % the language of the code
+    basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+    numbers=left,                   % where to put the line-numbers
+    numberstyle=\footnotesize,          % the size of the fonts that are used for the line-numbers
+    stepnumber=2,                   % the step between two line-numbers. If it's 1, each line 
+				  % will be numbered
+    numbersep=5pt,                  % how far the line-numbers are from the code
+    backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    frame=single,                   % adds a frame around the code
+    tabsize=2,                      % sets default tabsize to 2 spaces
+  %captionpos=b,                   % sets the caption-position to bottom
+    breaklines=true,                % sets automatic line breaking
+    breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+    title=\lstname,                   % show the filename of files included with \lstinputlisting;
+				  % also try caption instead of title
+  %numberstyle=\tiny\color{gray},        % line number style
+    keywordstyle=\color{red},          % keyword style
+    commentstyle=\color{green},       % comment style
+  %stringstyle=\color{mauve},         % string literal style
+  %escapeinside={\%*}{*)},            % if you want to add a comment within your code
+    morekeywords={function, var}               % if you want to add more keywords to the set
+}
+
+
+\definecolor{papa}{rgb}{0.3,0.3,0.3}
+%Gestion des entêtes et pieds de page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\rhead{\textsc{Projet J2EE}}
+\chead{}
+\lhead{\textsc{}}
+\lfoot{Burie - Ripplinger \\ Marion- Tchomgue}
+\cfoot{\thepage}
+\rfoot{Janvier 2013 - Enseeiht}
+\fancypagestyle{plain}{
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[L]{Burie - Ripplinger \\ Marion - Tchomgue}
+    \fancyfoot[C]{\thepage}
+    \fancyfoot[R]{Janvier 2013 - Enseeiht}
+    \fancyhead[L]{\textsc{}}
+    \fancyhead[R]{\textsc{Projet J2EE}}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\footrulewidth}{0.5pt}
+}
+
+
+% Après tous les autres packages pour etablir les liens cliquables.
+\usepackage{hyperref}
+
+\hypersetup{
+%   backref=true,                           % Permet d'ajouter des liens dans
+%   pagebackref=true,                       % les bibliographies
+%   hyperindex=true,                        % Ajoute des liens dans les index.
+    colorlinks=true,                        % Colorise les liens.
+    breaklinks=true,                        % Permet le retour Ã  la ligne dans les liens trop longs.
+    urlcolor=blue,                          % Couleur des hyperliens.
+    linkcolor=papa,                         % Couleur des liens internes.
+%   bookmarks=true,                         % Crée des signets pour Acrobat.
+    bookmarksopen=true,                     % Si les signets Acrobat sont crÃ©Ã©s, les afficher complÃ¨tement.
+    pdftitle={Projet J2EE},  		    % Titre du document.
+    pdfauthor={Ivan, Guilhem, Victor, Antoine},                      % dans les informations du document
+    pdfsubject={Projet J2EE}           % sous Acrobat.
+}
+
+%\newlength{\larg}
+%\setlength{\larg}{14.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% DEBUT DU RAPPORT %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\include{titlepage}
+
+\begin{abstract}
+    TODO
+\end{abstract}
+
+\tableofcontents{}
+\end{document}
+%%%% vim set shiftwidth=2 %%%%
+
