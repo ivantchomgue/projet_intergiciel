@@ -1,0 +1,127 @@
+\documentclass[t, usepdftitle=false]{beamer}% t=top, b=bottom, c=center(centré verticalement pas horizontalement option par défaut), 
+					    % usepdftitle=info sur le titre et l'auteur
+					    %brown couleur beamer pour les slides, par defaut c'est le bleu; autres: red, brown, blackandwhite
+
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+%\hypersetup{pdfpagemode=FullScreen} %force le plein écran;déconseillé pour des raisons de chargement
+
+%différentes manière de definir une couleur personnalisée
+\definecolor{macouleur}{rgb}{0.20,0.43,0.09} % vert moyen
+%\definecolor{macouleur}{RGB}{51,110,23} % vert moyen
+%\definecolor{macouleur}{HTML}{336E17} % vert moyen; les lettres en majuscule dans le cas HTML
+%\colorlet{macouleur}{black} %pour une couleur nommée (celles de base).
+
+
+%definitions des thèmes
+
+%thèmes sans barre de navigation
+
+%\usetheme{default} 
+%\usetheme{Pittsburgh}
+%\usetheme{Boadilla}
+%\usetheme{Rochester}
+%\usetheme{Madrid} 
+%\usetheme{AnnArbor}
+%\usetheme{CambridgeUS}
+
+%themes avec un arbre de navigation
+
+%\usetheme{Montpellier} 
+%\usetheme{Antibes}
+%\usetheme{Juanlespins}
+
+%thèmes avec sommaire latéral
+
+%\usetheme{Goettingen} 
+%\usetheme{Hannover}
+%\usetheme{Marburg}
+%\usetheme{Berkeley}
+%\usetheme{Paloalto}
+
+%thèmes avec minicadre de navigation
+
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Berlin}
+%\usetheme{Ilmenau}
+%\usetheme{Dresden}
+%\usetheme{Darmstadt}
+%\usetheme{Frankfurt}
+
+%thèmes avec un sommaire et des sous sections
+
+%\usetheme{Malmoe}
+%\usetheme{Copenhagen}
+%\usetheme{Luebeck}
+\usetheme{Warsaw}
+
+
+%couleurs des éléments beamer 
+%\usecolortheme[named=macouleur]{structure} %couleur de la structure du thème bleu par défaut définie à macouleur
+\setbeamercolor{structure}{fg=beamer@blendedblue} %d'où ce bleu par défaut
+\setbeamercolor{normal text}{fg=black,bg=white} %valeur par defaut ; fg signifie foreground avant plan en français
+\setbeamercolor{alerted text}{fg=red}
+\setbeamercolor{example text}{fg=green!50!black}
+\setbeamercolor{background canvas}{parent=normal text}
+
+
+%\usefonttheme{nom du theme de police}
+%\useinnertheme{nom du theme interne}
+%\useoutertheme{nom du theme externe}
+
+%definition d'un theme ici nommé clair de scheme pour les boîtes
+\beamerboxesdeclarecolorscheme{clair}{cyan}{magenta}
+
+
+%sommaire automatique 
+\AtBeginSection[]%au debut de chaque section; \AtBeginSubsection[] existe
+{
+  \begin{frame}
+  \frametitle{Sommaire automatique}
+  \small \tableofcontents[currentsection, hideothersubsections]
+  \end{frame} 
+}
+
+%informations sur le titre et l'auteur pour la page de garde
+\title[Projet J2EE]{Classement des filles d'une école} %[titre pieddepage]{titre de la présentation}
+\author{Ivan Tchomgue - Antoine Burie\\ Guilhem Marion - Victor Ripplinger} %auteur de la présentation
+\institute{Enseeiht} %cadre ou lieu de présentation
+\date{\today} %date de création du diaporama
+
+\begin{document} %début de la présentation
+
+\logo{\includegraphics[height=5mm]{../img/logon7.png}}%logo 
+%\logo{\insertframenumber/\inserttotalframenumber}%logo
+
+%page de garde
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%sommaire
+%\begin{frame}
+    %\frametitle{Sommaire}
+    %\tableofcontents %affiche tout
+    %\tableofcontents[currentsection] % Indiquera la section en cours ainsi que sa sous section en cours. Le reste apparaitra en transparent.
+    %\tableofcontents[currentsubsection] % Ne seront transparents que les sous sections n'étant pas en cours.
+    %\tableofcontents[hideallsubsections] % N'affichera plus du tout les sous sections.
+    %\tableofcontents[hideothersubsections] % Affichera tout, sauf les sous sections des sections n'étants pas en cours.
+    %\tableofcontents[pausesections] % Fera une pause avant d'afficher le nom de la section suivante. Il faudra donc cliquer pour faire apparaitre la section n°2, puis re-cliquer pour faire apparaitre la section n°3, ...
+    %\tableofcontents[pausesubsections] % Pareil qu'au dessus, sauf que là ce sera aussi pareil pour les sous sections, on affichera donc tout, un à un.
+%\end{frame}
+
+\logo{\includegraphics[height=5mm]{../img/logon7.png}}%insertion d'un logo sur les pages suivantes
+
+\section{Verbatim et ses dérivées}	%une section englobant plusieurs frames
+\subsection{Utilisation des verbatims} % une sous-section englobant plusieurs frames
+    %debut d'une page
+\begin{frame}[fragile, label=frame1] % fragile => utilisation du verbatim, label => référence 
+\frametitle{Titre} %titre de la page
+\framesubtitle{sous-titre} %sous-titre
+\insertlogo logo %inserion du logo ds une page
+
+\end{frame}
+\end{document}%fin de la présentation
