@@ -1,0 +1,3 @@
+#Thu Dec 27 12:55:51 CET 2012
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes>\n  <runtime id\="JBoss v5.0" location\="/home/vic/programmes/Java/J2EE/TP1_JBoss/jboss-6.0.0.Final/bin" name\="JBoss v5.0" runtime-type-id\="org.eclipse.jst.server.generic.runtime.jboss5" server_definition_id\="org.eclipse.jst.server.generic.runtime.jboss5" timestamp\="0" vm-install-id\="1356607805804" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n    <map key\="generic_server_instance_properties" serverRootDirectory\="/home/vic/programmes/Java/J2EE/TP1_JBoss/jboss-6.0.0.Final"/>\n  </runtime>\n</runtimes>\n
+eclipse.preferences.version=1

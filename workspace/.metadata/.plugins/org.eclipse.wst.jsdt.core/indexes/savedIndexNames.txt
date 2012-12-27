@@ -1,0 +1,2 @@
+INDEX VERSION 1.122+/home/vic/programmes/Java/J2EE/projet_intergiciel/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1695220672.index
